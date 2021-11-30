@@ -1,0 +1,13 @@
+/* ./assets/css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .grid-cols-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  .grid-layout {
+    @apply grid gap-5 grid-cols-auto-fit;
+  }
+}
